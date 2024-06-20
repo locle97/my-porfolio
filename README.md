@@ -115,7 +115,7 @@ Now, you have a Dockerized Nginx server with Certbot integration for automatic S
 Test SSL certificate issuance with a dry run using the following command:
 
 ```shell
-docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot --dry-run -d loclep1.site
+docker compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot --dry-run -d loclep1.site
 ```
 
 ### 7. Generate SSL Certificate:
@@ -123,7 +123,7 @@ docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certb
 Generate an SSL certificate with the following command:
 
 ```shell
-docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot -d loclep1.site
+docker compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot -d loclep1.site
 ```
 
 ### 8. Modify Nginx Configuration for SSL:
